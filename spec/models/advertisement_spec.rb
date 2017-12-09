@@ -15,5 +15,5 @@ RSpec.describe Advertisement, type: :model do
     it "should respond to price" do
       expect(advertisement).to respond_to(:price)
     end
-  end 
+  end
 end
