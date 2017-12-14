@@ -21,7 +21,7 @@
       </div>
     <% end %>
 
-    
+
     <% @topic.sponsored_posts.each do |sponsored_post| %>
       <div class="media">
         <div class="media-body">
@@ -33,7 +33,7 @@
     <% end %>
   </div>
 
-  </div>
+
   <div class="col-md-4">
     <%= link_to "New Post", new_topic_post_path(@topic), class: 'btn btn-success' %>
 
@@ -41,3 +41,4 @@
 
   </div>
 </div>
+  </div>
