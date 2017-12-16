@@ -41,7 +41,7 @@ source 'https://rubygems.org'
  group :development, :test do
    gem 'rspec-rails', '~> 3.0'
    gem 'rails-controller-testing'
-   gem 'shoulda' 
+   gem 'shoulda'
  end
 
  group :development do
@@ -49,3 +49,7 @@ source 'https://rubygems.org'
  end
 
  gem 'bootstrap-sass'
+
+ #Encrypting Passwords
+ gem 'bcrypt'
+ 
