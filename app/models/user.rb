@@ -1,27 +1,21 @@
 class User < ApplicationRecord
   has_many :posts, dependent: :destroy
-  before_save { self.email = email.downcase if email.present? }
-  before_save :format_name
+  has_many :comments, dependent: :destroy
 
-  #EMAIL_REGEX = /\A[\w+\-.]+@[a-z]+\z/i
+  before_save { self.email = email.downcase if email.present? }
+  before_save { self.role ||= :member }
 
   validates :name, length: { minimum: 1, maximum: 100 }, presence: true
   validates :password, presence: true, length: { minimum: 6 }, if: "password_digest.nil?"
-  #validates :password, length: { minimum: 6 }, allow_blank: true
+  validates :password, length: { minimum: 6 }, allow_blank: true
   validates :email,
             presence: true,
             uniqueness: { case_sensitive: false },
             length: { minimum: 3, maximum: 254 }
-  #has_secure_password
 
-  def format_name
-    if name
-      name_array = []
-      name.split.each do |name_part|
-        name_array << name_part.capitalize
-      end
+  has_secure_password
 
-      self.name = name_array.join(" ")
-  end
-end
+  enum role: [:member, :admin]
+
+
 end

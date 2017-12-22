@@ -70,10 +70,19 @@ end
 
 advertisements = Advertisement.all
 
-user = User.first
-user.update_attributes!(
-  email: 'w.andrewallen@gmail.com', # replace this with your personal email
-  password: 'matrix3' 
+# Create an admin user
+admin = User.create!(
+  name:     'Admin User',
+  email:    'w.andrewallen@gmail.com',
+  password: 'helloworld',
+  role:     'admin'
+)
+
+# Create a member
+member = User.create!(
+  name:     'Member User',
+  email:    'member@example.com',
+  password: 'helloworld'
 )
 
 puts "Seed finished"
