@@ -52,4 +52,6 @@ source 'https://rubygems.org'
 
  #Encrypting Passwords
  gem 'bcrypt'
- 
+
+ #Figaro
+gem 'figaro', '1.0' 
