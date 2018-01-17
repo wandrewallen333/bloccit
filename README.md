@@ -1,3 +1,3 @@
 ## Bloccit: a Reddit replica to teach the fundamentals of web development  and Rails.
 
-Made with my mentor at [Bloc](http:bloc.io)
+Checkout Bloccit Live: [Bloccit](https://damp-beach-88736.herokuapp.com/)
