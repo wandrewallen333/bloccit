@@ -41,4 +41,4 @@
   + Start the server using `rails server`
   + Run the app on `localhost:3000`
 
-  Check out the app  [here](https://damp-beach-88736.herokuapp.com/ target="_blank")
+  Check out the app  [here](https://damp-beach-88736.herokuapp.com/ ){:target="_blank"}
