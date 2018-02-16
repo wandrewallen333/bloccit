@@ -1,7 +1,5 @@
 ## ProduceIt: a Reddit like app for producers to share information for their craft.
 
-  This is my Bloccit app that I completed during the Foundations lessons at Bloc with Ruby on Rails. It is a clone of Reddit and therefore not especially useful since it's essentially a social network with no users.
-
   ProduceIt features include the abilities to:
 
   * create a user account with a username, email, and password, and use a Gravatar for a profile picture
